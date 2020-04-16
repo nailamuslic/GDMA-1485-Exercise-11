@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - SETTINGS
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+2.0 - TOOLS
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+3.0 - GENERIC
+-------------------------------------------------------------- */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color: gray;
+}
+
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	height: 50px;
+	background-color: aqua;
+	float: left;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	background-clip: content-box;
+}
+
+
+.col-lg-1 {
+	width: calc(100%*1/12);
+}
+
+.col-lg-2 {
+	width: calc(100%*2/12);
+}
+
+.col-lg-3 {
+	width: calc(100%*3/12);
+}
+
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
